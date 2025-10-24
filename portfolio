@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Just want to learn">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Crystals</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav">
+            <img src="" alt="Profile">
+            <img src="" alt="">
+            <img src="" alt="Contact">
+            <img src="" alt="About">
+        </div>
+    </header>
+    <main class="main">
+        <div>
+            <section id="">
+                <div class="service"></div>
+
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>
+
+        </div>
+    </footer>
+</body>
+</html>

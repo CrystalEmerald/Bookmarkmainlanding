@@ -1,0 +1,124 @@
+* {
+    margin:auto;
+}
+div {
+    background-image: url(\https://www.paypalobjects.com/webstatic/icon/pp258.png);
+}
+.part1 {
+    align-items: center;background-color:white; margin: auto; display:block; background-image: url(\https://www.paypalobjects.com/webstatic/icon/pp258.png); background-size: 25%; text-align:center;
+}
+.form1 {
+    width: 100%;
+    height: 22em;
+    
+}
+.form2 {
+    width: 100%;
+    height: 25em;
+
+}
+.div {
+    margin: 20rem;
+    display:flexbox;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: large;
+
+}
+.background {
+    background-color: white;
+}
+.body2 {
+    margin: 20%;
+    padding: 10%;
+    border: 1px solid royalblue;
+    background-color: #eee;
+    color: #eee;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: flexbox;
+    font-family: sans-serif;
+}
+input {
+    width: 100%;
+    height: 6%;
+}
+button {
+    height:2rem;
+    width: 12rem;
+}
+@keyframes animation{
+    from{
+        transform: translateX(0%);
+
+
+    }
+    to{
+        transform: translateX(100%);
+
+    }
+}
+label {
+    color: royalblue;
+}
+.part{
+    animation-name:animation;
+    animation-duration: 10s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:both;
+    animation-direction:alternate;
+.pat {
+    background-image: url(runways.jpg);
+}
+}
+.transition{
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: 1s;
+    transition-delay: 0s;
+}
+.transition:hover {
+    transform: scalex(100%);
+    background:whitesmoke;
+    color: royalblue;
+    border-color: violet;
+    border-width: 2px;
+    transform:scaleX(70%);
+}
+.body {
+    background-image:m;
+    background-color: white;
+    align-items: center;
+    justify-items: center;
+    text-align: center ;
+    align-content: center;
+    text-emphasis-color: red;
+    display: flexbox;
+    font-family: sans-serif;
+
+}
+.minor {
+    text-align: center;
+    background-color: beige;
+}
+ol {
+    color:aquamarine;
+}
+li {
+    color:grey;
+}
+th {
+    color:darkblue;
+}
+td {
+    color:#333;
+}
+.form1{
+    color:darkblue;
+}
+tr {
+    color: gray
+}

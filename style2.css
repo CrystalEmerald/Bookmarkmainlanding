@@ -1,0 +1,41 @@
+div {
+    margin:16%;
+    width:40%;
+    display:block;
+    border: 20px-;
+    height: 27rem;
+    background-color: #eee;
+    padding: 10%;
+}
+body {
+    background-color: #3f80bed4;
+    background-image:url(logo.png);
+}
+u {
+    text-underline-offset: 20%;
+    text-decoration-color: #3f80bed4;
+}
+button {
+    color: white;
+    height: 1.7rem;
+    border: 0em;
+    background-color: #408cff;
+}
+@keyframes anime {
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(100turn);
+    }
+}
+.rotate {
+    animation-name: anime;
+    animation-timing-function:ease;
+    animation-duration:50s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode:linear;
+    animation-direction:normal;
+    animation-play-state: running;
+}

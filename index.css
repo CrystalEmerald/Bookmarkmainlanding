@@ -1,0 +1,1151 @@
+* {
+    text-decoration-line: none;
+    font-family: 'Times New Roman', 'Times', 'serif';
+    color: hsl(229, 31%, 21%);
+}
+body {
+    font-size: 18px;
+    font-family:'Arial', 'Helvetica', 'sans-serif' ;
+}
+header {
+    margin: 10% 0 0 20%;
+    display: flex;
+    
+}
+
+.F, .P, .C, .L {
+    margin: 1%;
+    width: 100%;
+    height: 3em;
+    font-size: small;
+    text-align: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+
+}
+.logo {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.nav1 {
+    display: flex;
+    width: 40%;
+    height: 3em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    position: relative;
+    left: 50%;
+    bottom: 12em;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    margin-top: 10vh;
+}
+.navbar2 {
+    display: none;
+}
+.navbar {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    right: 0.00001vh;
+    top: 1px;
+    width: 100%;
+    height: 10%;
+    color: hsl(0, 0%, 97% );
+    background-color: white;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.navbar.open {
+    height: 100%;
+    z-index: 2;
+    color: hsl(0, 0%, 97% );
+    background: hsla(229, 31%, 21%, 0.96);
+}
+.displaytext {
+    overflow: hidden;
+    width: 90%;
+    display: block;
+    height: 0;
+    padding: 0px;
+    margin: 0px;
+    
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.displaytext2 {
+    overflow: hidden;
+    width: 90%;
+    display: block;
+    height: 0;
+    position: relative;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.displaytext3 {
+    overflow: hidden;
+    width: 90%;
+    display: block;
+    height: 0;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.displaytext4 {
+    overflow: hidden;
+    width: 90%;
+    display: block;
+    height: 0;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.displaytext.open {
+    height: 100%;
+}
+.displaytext2.open {
+    height: 100%;
+}
+.displaytext3.open {
+    height: 100%;
+}
+.displaytext4.open {
+    height: 100%;
+}
+.color1 {
+    padding:8% 0 0 10%;
+    color: hsl(0, 0%, 97%);
+}
+.toggle_btn {
+    position: relative;
+    left: 80%;
+    bottom: 25px;
+    display: block;
+}
+.toggle_btn2 {
+    position: relative;
+    top: 5vh;
+    right: 7%;
+}
+.navbar li {
+    margin: 0 15% 0 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 4vh ;
+    border-top: 1px solid hsl(0, 0%, 97% );
+    border-bottom: 1px solid hsl(0, 0%, 97% );
+}
+.social {
+    margin: 70% 0 0 18%;
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+}
+.social1, .social2 {
+    margin-left:60px;
+}
+html, body {
+    overflow-x: hidden;
+}
+.p1, .p2, .p6 {
+    margin: 0 0 0 10%;
+}
+.p1 {
+    display: flex;
+    position: static;
+}
+.p1a {
+    display: block;
+}
+.p1b {
+    display: flex;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    padding: 5px;
+    align-items: center;
+}
+.getchrome {
+    border: 2px solid hsl(231, 69%, 60%);
+    margin: 1%;
+    width: 20%;
+    height: 3em;
+    font-size: medium;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: hsl(231, 69%, 60%);
+}
+.color {
+    color: hsl(0, 0%, 97%);
+
+}
+.getfirefox {
+    width: 20%;
+    height: 3em;
+    font-size: medium;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 5px;
+    justify-content: center;
+    border: 2px solid hsl(0, 0%, 97%);
+    background-color: hsl(0, 0%, 97%);
+    margin: 15px;
+}
+.empty {
+    width: 75%;
+    height: 20em;
+    background-color: hsl(231, 69%, 60%);
+    position: relative;
+    left: 15%;
+    top: 3.5em;
+    border-radius: 27%;
+    box-sizing: border-box;
+    border: 2px solid hsl(231, 69%, 60%);
+}
+.img1 {
+    height: 23em;
+    position: absolute;
+    left: 54%;
+    bottom: 10%;
+}
+.img2 {
+    position: relative;
+    z-index: 2;
+    right: 45%;
+}
+.img3 {
+    position: relative;
+    z-index: 2;
+    right: 35%;
+}
+.img4 {
+    position: relative;
+    z-index: 2;
+    right: 45%;
+}
+.empty2 {
+    z-index: 1;
+    width: 100em;
+    height: 19em;
+    background-color: hsl(231, 69%, 60%);
+    position: relative;
+    top: 15%;
+    right: 15%;
+    border-radius: 25%;
+    border: 3px solid hsl(231, 69%, 60%);
+    padding: 0 30% 0 30%;
+}
+.empty3 {
+    z-index: 1;
+    width: 100em;
+    height: 19em;
+    background-color: hsl(231, 69%, 60%);
+    position: relative;
+    top: 17%;
+    right: 12%;
+    border-radius: 25%;
+    border: 3px solid hsl(231, 69%, 60%);
+    padding: 0 30% 0 30%;
+    clip-path: inset(0 0 0 21%);
+}
+.empty4 {
+    z-index: 1;
+    width: 100em;
+    height: 19em;
+    background-color: hsl(231, 69%, 60%);
+    position: relative;
+    top: 17%;
+    right: 15%;
+    border-radius: 25%;
+    border: 3px solid hsl(231, 69%, 60%);
+    padding: 0 30% 0 30%;
+    clip-path: inset(0 0 0 25%);
+}
+.p2 {
+    justify-items: center;
+    text-align: center;
+}
+.color2 {
+    color: hsl(229, 31%, 21%);
+}
+.sec1, .sec2, .sec3 {
+    width: 1000%;
+    height: 3em;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+#Pricing {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0px;
+    height: 30em;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+}
+#Pricing::-webkit-scrollbar {
+    display: none;
+}
+.price {
+    position: relative;
+    text-wrap: nowrap;
+    top: 15%;
+    right: 40%;
+}
+.price3 {
+    position: relative;
+    text-wrap: nowrap;
+    top: 15%;
+    right: 40%;
+}
+.price2 {
+    position: relative;
+    text-wrap: nowrap;
+    top: 15%;
+    right: 30%;
+}
+.info {
+    position: relative;
+    right: 64%;
+    text-wrap: nowrap;
+    top: 47%;
+    border: 2px solid hsl(231, 69%, 60%);
+    width: 10%;
+    height: 3em;
+    padding: 0 1% 3.5%;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: hsl(231, 69%, 60%)
+}
+.infol {
+    position: relative;
+    right: 55%;
+    text-wrap: nowrap;
+    top: 47%;
+    border: 2px solid hsl(231, 69%, 60%);
+    width: 10%;
+    height: 3em;
+    padding: 0 1% 3.5%;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: hsl(231, 69%, 60%)
+}
+
+.p3, .p4, .p5 {
+    display: flex;
+    width: 100%;
+}
+#browsers {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.chrome, .firefox, .opera {
+    width: 20%;
+    box-sizing: border-box;
+    border-left: 4px outset hsl(0, 0%, 97%);
+    border-bottom: 6px inset hsl(0, 0%, 97%);    
+    border-right: 5px inset hsl(0, 0%, 97%);
+    height: 100%;
+    border-radius: 5%;
+    text-align: center;
+}
+.firefox {
+    margin-left: 2%;
+    margin-top: 3%;
+}
+.opera {
+    margin-left: 2%;
+    margin-top: 6%;
+}
+.chrome-logo {
+    padding: 20% 0 0 0;
+}
+.btn {
+    position: relative;
+    top: -2vh;
+    border: 2px solid hsl(231, 69%, 60%);
+    margin: auto;
+    width: 80%;
+    height: 3em;
+    font-size: medium;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: hsl(231, 69%, 60%);
+
+}
+.color3 {
+    color: hsl(0, 0%, 97%);
+}
+
+.p6 {
+    text-align: center;
+    display: block;
+    justify-items: center;
+}
+body {
+    margin: 0px;
+}
+.line {
+    position: relative;
+    bottom: 2.5vh;
+    
+    border-top: dotted hsl(0, 0%, 97%);
+}
+.p7 {
+    display: block;
+    margin: auto;
+    padding: 0 30% 7% 35%;
+}
+.faq{
+    display: block;
+}
+.center {
+    text-align: center;
+}
+.info3 {
+    margin: auto;
+    box-sizing: border-box;
+    border: 2px solid hsl(231, 69%, 60%);
+    text-align: center;
+    width: 30%;
+    height: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0;
+    display: flex;
+    border-radius: 5%;
+    background-color: hsl(231, 69%, 60%);
+}
+#faq1, #faq2, #faq3, #faq4 {
+    display: block;
+}
+#myButton, #myButton2, #myButton3, #myButton4 {
+    border: none;
+    background: none;
+    position: relative;
+    bottom: 5vh;
+    left: 90%;
+}
+input {
+    width: 100%;
+    height: 2.5em;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10%;
+}
+.contact, #form {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+ul {
+    list-style: none;
+}
+#btn {
+    width: 55%;
+    height: 2.8em;
+    border-radius: 5px;
+    border: none;
+    color: hsl(0, 0%, 97%);
+    background-color: hsl(0, 94%, 66%);
+}
+.space {
+    letter-spacing: 4px;
+    color: hsl(0, 0%, 97%);
+    font: 10px sans-serif;
+}
+.spacecolor {
+    color: hsl(0, 0%, 97%);
+}
+footer {
+    display: block;
+    background-color:  hsl(231, 69%, 60%);
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0 ;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+}
+.navbar2 {
+    display: none;
+}
+.nav2 {
+    display: flex;
+    height: 10vh;
+    background-color: hsl(229, 31%, 21%);
+}
+.width {
+    width: 15%;
+    height: 50%;
+    margin:  1.3% 2% 0 8% ;
+}
+.F2, .P2, .C2, .L2 {
+    margin: 0.8% 3% 0 0;
+}
+.social3 {
+    display: flex;
+    margin: 2% 0 0 20%;
+}
+.social5 {
+    margin-left: 10vh ;
+}
+.colora{
+    color: hsl(0, 0%, 97%);
+}
+
+
+/* Transition animations */
+
+
+
+.F:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+}
+.P:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+}
+.C:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+}
+.L:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+}
+.getchrome:hover {
+    background-color: hsl(0, 0%, 97%);
+    color: hsl(229, 31%, 21%)
+}
+.getfirefox:hover {
+    border: 2px solid hsl(229, 31%, 21%);
+}
+.color:hover {
+    color: hsl(229, 31%, 21%);
+}
+.color2:hover {
+    color: hsl(0, 94%, 66%);
+}
+.color3:hover {
+    color: hsl(231, 69%, 60%);
+}
+.sec1:hover {
+    color: hsl(0, 94%, 66%);
+    border-bottom: 2px solid hsl(0, 94%, 66%);
+}
+.sec3:hover {
+    color: hsl(0, 94%, 66%);
+    border-bottom: 2px solid hsl(0, 94%, 66%);
+}
+.sec2:hover {
+    color: hsl(0, 94%, 66%);
+    border-bottom: 2px solid hsl(0, 94%, 66%);
+}
+.btn:hover {
+    background-color: inherit;
+    color: hsl(231, 69%, 60%);
+}
+.info:hover {
+    background-color: hsl(0, 0%, 97%);
+}
+.infol:hover {
+    background-color: hsl(0, 0%, 97%);
+}
+.info3:hover {
+    background-color: hsl(0, 0%, 97%);
+}
+input:hover {
+    border: 2px solid hsl(0, 94%, 66%);
+}
+#btn:hover {
+    background-color: hsl(0, 0%, 97%);
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 500px) {
+    html, body {
+        font-size: 14px;
+    }
+    .nav2, .nav1 {
+        display: none;
+    }
+    .navbar {
+        display: block;
+        position: absolute;
+    }
+    .img1 {
+        right: 10%;
+        top: 13%;
+        width: 90%;
+        bottom: unset;
+        left: unset;
+        height: 100%;
+        right: 4.5%;
+    }
+    .im1 {
+        width: 100%;
+    }
+    .p1a {
+        position: relative;
+        top: 40vh;
+        left: 12%;
+        margin: unset;
+        right: unset;
+        text-align: center;
+    }
+    .p1 {
+    margin: unset;
+    height: 100%;
+    }
+    .getchrome, .getfirefox {
+        width: 15vh;
+        height: 5vh;
+        z-index:1;
+    }
+    .empty {
+        border-radius: 7rem;
+        left: unset;
+        right: 25vh;
+        top: 11vh;
+        width: 100%;
+        height: 13rem;
+        padding: 0 100% 40% 100%;
+    }
+    .p3, .p4, .p5 {
+        position: relative;
+        top:30vh;
+        display: block;
+    }
+    .p2 {
+        position: relative;
+        top:30vh;
+        margin: unset;
+        width: 40vh;
+        left: 3vh;
+    }
+    .sec {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 3%;
+        height: 20vh;
+        z-index: 1;
+    }
+    .sec1, .sec2, .sec3 {
+        display: flex;
+        position: relative;
+        border-bottom: 1px solid hsl(229, 31%, 21%) ;
+        width: 40vh;
+        box-sizing: border-box;
+    }
+    #Pricing {
+        position: relative;
+        height: 90vh;
+        top: 30vh;
+        margin-bottom: 10vh;
+    }
+    .img2 {
+        bottom: 55vh;
+        right: unset;
+        left: 3vh;
+        padding-left: 4vh;
+    }
+    .img3 {
+        left: 35vh;
+        bottom: 57vh;
+
+    }
+    .img4 {
+        right: -47vh;
+        bottom: 60vh;
+    }
+    .im2 {
+        width: 40vh;
+    }
+    .empty2 {
+        border-radius: 30vh;
+        width: 29vh;
+        height: 26vh;
+        right: 15vh;
+        top: -23vh;
+    }
+    .empty3 {
+        top: -20vh;
+        right: -7vh;
+        height: 26vh;
+        width: 30vh;
+    }
+    .empty4 {
+        top: -27%;
+        right: unset;
+        left: 27vh;
+        width: 30vh;
+        height: 26vh;
+    }
+    .price {
+        top: -47vh;
+        right: unset;
+        left: 5%;
+        text-align: center;
+        width: 42vh;
+        text-wrap: wrap;
+    }
+    .price2 {
+        top: unset;
+        bottom: 50vh;
+        right: unset;
+        left: 35vh;
+        text-align: center;
+        width: 40vh;
+        text-wrap: wrap;
+    }
+    .price3 {
+        position: relative;
+        top: unset;
+        bottom: 50vh;
+        left: 45vh;
+        text-wrap: wrap;
+    }
+    .p6 {
+        margin: 0 10% 0 10%;
+        max-width: 40vh;
+        justify-content: center;
+    }
+    #browsers {
+        display: block;
+        width: 30vh;;
+        position: relative;
+        right: 10%;
+    }
+    .chrome, .firefox, .opera {
+        width: 37vh;
+        margin-bottom: 2vh;
+        height: 100%;
+    }
+    .p7 {
+        margin: unset;
+        padding: unset;
+    }
+    #center {
+        display: flex;
+        width: 50%;
+        padding: 0;
+        margin-left: 25%;
+        justify-content: center;
+        text-wrap: wrap;
+    }
+    .line {
+    position: relative;
+    bottom: 2.5vh;
+    
+    border-top: dotted hsl(0, 0%, 97%);
+}
+    #faq {
+        padding: 1vh 8vh;
+    }
+    .faq {
+        padding: 0 4vh;
+    }
+    .color2 {
+        margin: 13% 0 0 0;
+        display: flex;
+        justify-content: left;
+    }
+    #myButton, #myButton2, #myButton3, #myButton4 {
+        position: relative;
+        left: 80%;
+    }
+    .hr {
+        margin: unset;
+    }
+    .edit {
+        position: relative;
+        margin-top: 10%;
+        width: 2vh;
+    }
+    #form {
+        display: block;
+    }
+    #btn {
+        margin: 2vh 0 0 0;
+        text-align: center;
+        width: 36vh;
+        height: 6vh
+    }
+    .btn {
+        top: -2vh;
+    }
+    .color5 {
+        color: hsl(0, 0%, 97%);
+    }
+    li {
+        list-style: none;
+    }
+    input {
+        text-align: center;
+        width: 36vh;
+        padding-bottom: 1vh;
+    }
+    .contact {
+        display: block;
+        margin: unset;
+    }
+    .remove {
+        display: none;
+    }
+    #l1, #l2, #l3, #l4, #l5 {
+        margin-bottom: 4%;
+    }
+    ul {
+        margin: unset;
+    }
+    .navbar2 {
+        height: 100%;
+        display: block;
+        align-content: center;
+        justify-items: center;
+        background-color: hsl(229, 31%, 21%);
+    }
+    .social6 {
+        display: flex;
+        padding: 4%;
+    }
+    .social8 {
+        margin-left: 9vh;
+    }
+    .social7 {
+        margin-left: 4vh;
+    }
+
+    /* Responsive Transition */
+
+    .navbar li:hover {
+        border: 2px solid hsl(0, 0%, 97% );
+        margin-top: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+    @media only screen and (min-width: 501px) and (max-width: 1200px) {
+    html, body {
+        font-size: 14px;
+    }
+    .nav2, .nav1 {
+        display: none;
+    }
+    .navbar {
+        display: block;
+        position: absolute;
+    }
+    .img1 {
+        right: 10%;
+        top: 13%;
+        width: 90%;
+        bottom: unset;
+        left: unset;
+        height: 100%;
+        right: 4.5%;
+    }
+    .im1 {
+        width: 100%;
+    }
+    .p1a {
+        position: relative;
+        top: 50vh;
+        left: 25%;
+        margin: unset;
+        right: unset;
+        text-align: center;
+    }
+    .p1 {
+        margin: unset;
+        height: 100%;
+    }
+    .getchrome, .getfirefox {
+        width: 15vh;
+        height: 5vh;
+        z-index:1;
+    }
+    .empty {
+        border-radius: 20vh;
+        left: unset;
+        right: 20vh;
+        top: 11vh;
+        width: 100%;
+        height: 35vh;
+        padding: 0 100% 40% 100%;
+    }
+    .p3, .p4, .p5 {
+        position: relative;
+        top:30vh;
+        display: block;
+    }
+    .p2 {
+        position: relative;
+        top:30vh;
+        margin: unset;
+        width: 40vh;
+        left: 20%;
+    }
+    .sec {
+        display: block;
+        width: 100%;
+        position: relative;
+        left: 3%;
+        height: 20vh;
+        z-index: 1;
+    }
+    .sec1, .sec2, .sec3 {
+        display: flex;
+        position: relative;
+        border-bottom: 1px solid hsl(229, 31%, 21%) ;
+        width: 40vh;
+        box-sizing: border-box;
+    }
+    #Pricing {
+        position: relative;
+        height: 80vh;
+        top: 30vh;
+        margin-bottom: 10vh;
+    }
+    .img2 {
+        bottom: 55vh;
+        right: unset;
+        left: 3vh;
+        padding-left: 4vh;
+    }
+    .img3 {
+        left: 35vh;
+        bottom: 57vh;
+
+    }
+    .img4 {
+        right: -47vh;
+        bottom: 60vh;
+    }
+    .im2 {
+        width: 40vh;
+    }
+    .empty2 {
+        border-radius: 30vh;
+        width: 29vh;
+        height: 26vh;
+        right: 15vh;
+        top: -23vh;
+    }
+    .empty3 {
+        top: -20vh;
+        right: -7vh;
+        height: 26vh;
+        width: 30vh;
+    }
+    .empty4 {
+        top: -27%;
+        right: unset;
+        left: 27vh;
+        width: 30vh;
+        height: 26vh;
+    }
+    .price {
+        top: -47vh;
+        right: unset;
+        left: 5%;
+        text-align: center;
+        width: 42vh;
+        text-wrap: wrap;
+    }
+    .price2 {
+        top: unset;
+        bottom: 50vh;
+        right: unset;
+        left: 35vh;
+        text-align: center;
+        width: 40vh;
+        text-wrap: wrap;
+    }
+    .price3 {
+        position: relative;
+        top: unset;
+        bottom: 50vh;
+        left: 45vh;
+        text-wrap: wrap;
+    }
+    .p6 {
+        margin: 0 10% 0 20%;
+        width: 40vh;
+        justify-content: center;
+    }
+    #browsers {
+        display: block;
+        width: 30vh;;
+        position: relative;
+        right: 10%;
+    }
+    .chrome, .firefox, .opera {
+        width: 37vh;
+        margin-bottom: 2vh;
+        height: 100%;
+    }
+    .p7 {
+        margin-left: 7%;
+        padding: unset;
+    }
+    #center {
+        display: flex;
+        width: 50%;
+        padding: 0;
+        margin-left: 25%;
+        justify-content: center;
+        text-wrap: wrap;
+    }
+    .line {
+    position: relative;
+    bottom: 2.5vh;
+    
+    border-top: dotted hsl(0, 0%, 97%);
+}
+    #faq {
+        padding: 1vh 8vh;
+    }
+    .faq {
+        padding: 0 4vh;
+    }
+    .color2 {
+        margin: 13% 0 0 0;
+        display: flex;
+        justify-content: left;
+    }
+    #myButton, #myButton2, #myButton3, #myButton4 {
+        position: relative;
+        left: 80%;
+    }
+    .hr {
+        margin: unset;
+    }
+    .social {
+        margin-left: 40%;
+    }
+    .edit {
+        position: relative;
+        margin-top: 10%;
+        width: 2vh;
+    }
+    #form {
+        display: block;
+    }
+    #btn {
+        margin: 2vh 0 0 0;
+        text-align: center;
+        width: 36vh;
+        height: 6vh
+    }
+    .btn {
+        top: -2vh;
+    }
+    .color5 {
+        color: hsl(0, 0%, 97%);
+    }
+    li {
+        list-style: none;
+    }
+    input {
+        text-align: center;
+        width: 36vh;
+        padding-bottom: 1vh;
+    }
+    .contact {
+        display: block;
+        margin-right: 45%;
+    }
+    .remove {
+        display: none;
+    }
+    #l1, #l2, #l3, #l4 {
+        margin-bottom: 4%;
+    }
+    .navbar2 {
+        height: 100%;
+        display: block;
+        align-content: center;
+        justify-items: center;
+        background-color: hsl(229, 31%, 21%);
+    }
+    .social6 {
+        display: flex;
+        padding: 8%;
+    }
+    ul {
+        margin: unset;
+    }
+    .social8 {
+        margin-left: 8vh;
+    }
+    .social7 {
+        margin-left: 4vh;
+    }
+
+    /* Responsive Transition */
+
+    .navbar li:hover {
+        border: 2px solid hsl(0, 0%, 97% );
+        margin-top: 10%;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

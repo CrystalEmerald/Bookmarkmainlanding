@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .content-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .dropdown-container {
+            margin: 30px 0;
+            position: relative;
+        }
+        
+        .dropdown-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .dropdown {
+            position: relative;
+            width: 100%;
+        }
+        
+        .dropdown-btn {
+            width: 100%;
+            padding: 12px 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            text-align: left;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .dropdown-btn:hover {
+            border-color: #3498db;
+        }
+        
+        .dropdown-btn:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+        
+        .dropdown-btn::after {
+            content: "▼";
+            font-size: 12px;
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown-btn.active::after {
+            transform: rotate(180deg);
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            display: none;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .dropdown-content.show {
+            display: block;
+        }
+        
+        .dropdown-item {
+            padding: 12px 15px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        
+        .dropdown-item:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .dropdown-item.selected {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .code-example {
+            background-color: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 30px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+        
+        .code-example h3 {
+            color: #63b3ed;
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            color: #fbb6ce;
+        }
+        
+        .attribute {
+            color: #68d391;
+        }
+        
+        .value {
+            color: #f6ad55;
+        }left: 90%;left: 90%;left: 90%;
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Creating Dropdown Menus in HTML</h1>
+        
+        <div class="content-section">
+            <h2></h2>
+            <p></p>
+        </div>
+        
+        <div class="content-section">
+            <h2>How can I request a new browser?</h2>
+            <p></p>
+        </div>
+        
+        <div class="dropdown-container">
+            <label class="dropdown-label">Select a Browser:</label>
+            <div class="dropdown">
+                <button class="dropdown-btn" id="dropdownBtn">Choose a browser...</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <div class="dropdown-item" data-value="chrome">Google Chrome</div>
+                    <div class="dropdown-item" data-value="firefox">Mozilla Firefox</div>
+                    <div class="dropdown-item" data-value="safari">Apple Safari</div>
+                    <div class="dropdown-item" data-value="edge">Microsoft Edge</div>
+                    <div class="dropdown-item" data-value="opera">Opera</div>
+                    <div class="dropdown-item" data-value="brave">Brave</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>Crystal - Is there a mobile app?</h2>
+            <p>Yes, it is available as a mobile app for both iOS and Android devices. You can download it from the Apple App Store or Google Play Store. The mobile app offers all the features of the desktop version optimized for touch interfaces.</p>
+        </div>
+        
+        <div class="code-example">
+            <h3>HTML Code for the Dropdown:</h3>
+            <pre><code>&lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown-container"</span>&gt;
+  &lt;<span class="highlight">label</span> <span class="attribute">class</span>=<span class="value">"dropdown-label"</span>&gt;Select a Browser:&lt;/<span class="highlight">label</span>&gt;
+  &lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown"</span>&gt;
+    &lt;<span class="highlight">button</span> <span class="attribute">class</span>=<span class="value">"dropdown-btn"</span> <span class="attribute">id</span>=<span class="value">"dropdownBtn"</span>&gt;Choose a browser...&lt;/<span class="highlight">button</span>&gt;
+    &lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown-content"</span> <span class="attribute">id</span>=<span class="value">"dropdownContent"</span>&gt;
+      &lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown-item"</span> <span class="attribute">data-value</span>=<span class="value">"chrome"</span>&gt;Google Chrome&lt;/<span class="highlight">div</span>&gt;
+      &lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown-item"</span> <span class="attribute">data-value</span>=<span class="value">"firefox"</span>&gt;Mozilla Firefox&lt;/<span class="highlight">div</span>&gt;
+      &lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown-item"</span> <span class="attribute">data-value</span>=<span class="value">"safari"</span>&gt;Apple Safari&lt;/<span class="highlight">div</span>&gt;
+      &lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown-item"</span> <span class="attribute">data-value</span>=<span class="value">"edge"</span>&gt;Microsoft Edge&lt;/<span class="highlight">div</span>&gt;
+      &lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown-item"</span> <span class="attribute">data-value</span>=<span class="value">"opera"</span>&gt;Opera&lt;/<span class="highlight">div</span>&gt;
+      &lt;<span class="highlight">div</span> <span class="attribute">class</span>=<span class="value">"dropdown-item"</span> <span class="attribute">data-value</span>=<span class="value">"brave"</span>&gt;Brave&lt;/<span class="highlight">div</span>&gt;
+    &lt;/<span class="highlight">div</span>&gt;
+  &lt;/<span class="highlight">div</span>&gt;
+&lt;/<span class="highlight">div</span>&gt;</code></pre>
+        </div>
+        
+        <div class="footer">
+            <p>Dropdown Menu Example | Created with HTML, CSS & JavaScript</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownBtn = document.getElementById('dropdownBtn');
+            const dropdownContent = document.getElementById('dropdownContent');
+            const dropdownItems = document.querySelectorAll('.dropdown-item');
+            
+            // Toggle dropdown visibility
+            dropdownBtn.addEventListener('click', function() {
+                dropdownContent.classList.toggle('show');
+                dropdownBtn.classList.toggle('active');
+            });
+            
+            // Handle item selection
+            dropdownItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const value = this.getAttribute('data-value');
+                    const text = this.textContent;
+                    
+                    // Update button text
+                    dropdownBtn.textContent = text;
+                    
+                    // Remove selected class from all items
+                    dropdownItems.forEach(i => i.classList.remove('selected'));
+                    
+                    // Add selected class to clicked item
+                    this.classList.add('selected');
+                    
+                    // Close dropdown
+                    dropdownContent.classList.remove('show');
+                    dropdownBtn.classList.remove('active');
+                    
+                    // You can use the selected value for further processing
+                    console.log(`Selected browser: ${text} (${value})`);
+                });
+            });
+            
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.matches('.dropdown-btn') && 
+                    !event.target.matches('.dropdown-item') &&
+                    !event.target.closest('.dropdown-content')) {
+                    dropdownContent.classList.remove('show');
+                    dropdownBtn.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
