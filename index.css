@@ -390,7 +390,7 @@ html, body {
     top: -2vh;
     border: 2px solid hsl(231, 69%, 60%);
     margin: auto;
-    width: 80%;
+    width: 90%;
     height: 3em;
     font-size: medium;
     text-align: center;
@@ -922,7 +922,7 @@ input:hover {
         top:30vh;
         margin: unset;
         width: 40vh;
-        left: 20%;
+        left: 15%;
     }
     .sec {
         display: block;
@@ -1016,7 +1016,7 @@ input:hover {
         display: block;
         width: 30vh;;
         position: relative;
-        right: 10%;
+        right: 15%;
     }
     .chrome, .firefox, .opera {
         width: 37vh;
@@ -1092,7 +1092,7 @@ input:hover {
     }
     .contact {
         display: block;
-        margin-right: 45%;
+        margin-right: 50%;
     }
     .remove {
         display: none;
