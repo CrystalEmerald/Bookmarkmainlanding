@@ -922,7 +922,7 @@ input:hover {
         top:30vh;
         margin: unset;
         width: 40vh;
-        left: 15%;
+        left: 10%;
     }
     .sec {
         display: block;
@@ -1016,7 +1016,7 @@ input:hover {
         display: block;
         width: 30vh;;
         position: relative;
-        right: 15%;
+        right: 20%;
     }
     .chrome, .firefox, .opera {
         width: 37vh;
