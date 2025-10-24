@@ -900,7 +900,6 @@ input:hover {
     }
     .getchrome, .getfirefox {
         width: 15vh;
-        height: 5vh;
         z-index:1;
     }
     .empty {
@@ -982,6 +981,9 @@ input:hover {
         left: 27vh;
         width: 30vh;
         height: 26vh;
+    }
+    #download {
+        margin-inline-start: 10%;
     }
     .price {
         top: -47vh;
