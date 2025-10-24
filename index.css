@@ -42,7 +42,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-.btn:hover {
+.ul {
     margin-top: 10vh;
 }
 .navbar2 {
@@ -889,7 +889,7 @@ input:hover {
     .p1a {
         position: relative;
         top: 50vh;
-        left: 25%;
+        left: 20%;
         margin: unset;
         right: unset;
         text-align: center;
