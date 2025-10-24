@@ -42,7 +42,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-ul {
+.btn:hover {
     margin-top: 10vh;
 }
 .navbar2 {
