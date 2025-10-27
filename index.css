@@ -1074,7 +1074,8 @@ input:hover {
         margin: 2vh 0 0 0;
         text-align: center;
         width: 36vh;
-        height: 4vh
+        height: 4vh;
+        border-radius: 5%;
     }
     .btn {
         top: -2vh;
