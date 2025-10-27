@@ -812,7 +812,7 @@ input:hover {
     }
     input {
         text-align: center;
-        width: 36vh;
+        width: 35vh;
         padding-bottom: 1vh;
     }
     .contact {
@@ -1090,6 +1090,7 @@ input:hover {
         width: 36vh;
         height: 3vh;
         padding-bottom: 1vh;
+        border-radius: 5%;
     }
     .contact {
         display: block;
